@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="240" viewBox="0 0 480 240" role="img" aria-labelledby="title desc">
+<title id="title">Ilustração de campo esportivo</title>
+<desc id="desc">Campo verde retangular com linhas brancas, círculo central e duas áreas.</desc>
+<rect width="480" height="240" fill="#e8f1e8"/>
+<rect x="28" y="20" width="424" height="200" rx="3" fill="#5c9568" stroke="#ffffff" stroke-width="3"/>
+<path d="M240 20 V220" stroke="#ffffff" stroke-width="3"/>
+<circle cx="240" cy="120" r="42" fill="none" stroke="#ffffff" stroke-width="3"/>
+<rect x="28" y="65" width="72" height="110" fill="none" stroke="#ffffff" stroke-width="3"/>
+<rect x="380" y="65" width="72" height="110" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="240" cy="120" r="4" fill="#ffffff"/>
+</svg>

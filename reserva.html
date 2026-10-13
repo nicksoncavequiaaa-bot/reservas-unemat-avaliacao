@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulário fictício para demonstrar campos HTML em uma solicitação de uso de espaço esportivo.">
+  <title>Formulário demonstrativo | Reservas Esportivas UNEMAT</title>
+</head>
+<body>
+  <header>
+    <h1>Formulário Demonstrativo</h1>
+    <p>Simulação acadêmica de solicitação de uso de espaço esportivo.</p>
+  </header>
+
+  <nav aria-label="Navegação principal">
+    <h2>Menu principal</h2>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="espacos.html">Espaços esportivos</a></li>
+      <li><a href="reserva.html">Formulário demonstrativo</a></li>
+      <li><a href="funcionamento.html">Como funciona</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Preencha os dados de exemplo</h2>
+      <p><strong>Atenção:</strong> este formulário não envia nem armazena os dados. Ele serve somente para demonstrar a estrutura HTML e a validação nativa do navegador.</p>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Identificação do responsável</legend>
+
+          <p>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+
+          <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000">
+          </p>
+
+          <p>
+            <label for="matricula">Número de matrícula (exemplo):</label>
+            <input type="number" id="matricula" name="matricula" min="1" step="1">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Dados da atividade</legend>
+
+          <p>
+            <label for="espaco">Espaço desejado:</label>
+            <select id="espaco" name="espaco" required>
+              <option value="">Selecione uma opção</option>
+              <option value="quadra-areia">Quadra de areia</option>
+              <option value="campo-futebol">Campo de futebol</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="data">Data pretendida:</label>
+            <input type="date" id="data" name="data" required>
+          </p>
+
+          <p>
+            <label for="horario">Horário pretendido:</label>
+            <input type="time" id="horario" name="horario" required>
+          </p>
+
+          <p>
+            <label for="participantes">Quantidade estimada de participantes:</label>
+            <input type="range" id="participantes" name="participantes" min="2" max="30" value="10">
+          </p>
+
+          <p>
+            <label for="cor">Cor de identificação da equipe (exemplo):</label>
+            <input type="color" id="cor" name="cor" value="#176b4b">
+          </p>
+
+          <p>
+            <label for="atividade">Descrição da atividade:</label>
+            <textarea id="atividade" name="atividade" rows="4" cols="40" maxlength="300" placeholder="Descreva a atividade (opcional)."></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="ciente" name="ciente" required>
+            <label for="ciente">Entendi que esta é apenas uma demonstração e não cria uma reserva real.</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Visualizar envio demonstrativo</button>
+          <button type="reset">Limpar formulário</button>
+        </p>
+      </form>
+      <p>O envio usa apenas o comportamento padrão do navegador; não existe servidor conectado e nenhuma reserva será criada.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="index.html">Voltar à página inicial</a></p>
+    <p>Formulário acadêmico demonstrativo.</p>
+  </footer>
+</body>
+</html>
